@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lab4 - Exercise 2</title>
+</head>
+<body>
+    <h1>JavaScript Lab</h1>
+    <script>
+        // Declaring Functions
+        // function add(num1, num2) {
+        //     return num1 + num2;
+        // }
+        // function subtract(num1, num2) {
+        //     return num1 - num2;
+        // }
+        // console.log(add(2, 3));
+        // console.log(subtract(8, 5));
+
+        // Using Default Parameters
+        // function add(num1, num2 = 0) {
+        //     return num1 + num2;
+        // }
+        // function subtract(num1, num2 = 0) {
+        //     return num1 - num2;
+        // }
+        // console.log(add(3, 5));
+        // console.log(add(3));
+        // console.log(subtract(8, 5));
+        // console.log(subtract(8));
+
+        // Implementing Arrow Functions
+        let add = (num1, num2) => num1 + num2;
+        let subtract = (num1, num2) => num1 - num2;
+        let multiply = (num1, num2) => num1 * num2;
+        let divide = (num1, num2) => {
+            if (num2 == 0) {
+                console.log("num2 set to 1. Cannot divide by zero.");
+                num2 = 1;
+            }
+            return num1 / num2; 
+        }
+        console.log(add(2, 3));
+        console.log(subtract(2, 3));
+        console.log(multiply(2, 3));
+        console.log(divide(6, 0));
+
+        // Understanding Callback Functions
+        function calculator(num1, num2, callback) {
+            return callback(num1, num2);
+        }
+        let result1 = calculator(2, 3, add);
+        let result2 = calculator(2, 3, multiply);
+        console.log(result1);
+        console.log(result2);
+    </script>
+</body>
+</html>
