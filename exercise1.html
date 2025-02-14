@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Lab4 – Exercise 1</title>
+</head>
+
+<body>
+    <h1>JavaScript Lab</h1>
+    <script>
+        let x = 3;
+        let y = 4;
+        const z = 5;
+        //z = 6;
+
+        let string1 = "Hello, World!";
+        let string2 = "JavaScript is fun!";
+        console.log(string1.length);
+        let combinedStrings = string1.concat(string2);
+        console.log(combinedStrings);
+        string2 = string2.replace("fun", "awesome");
+        console.log(string2);
+
+        let name = "Alice";
+        let age = 25;
+        let string3 = `My name is ${name} and I am ${age} years old`;
+        console.log(string3);
+
+        let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+        let currentDate = new Date();
+        console.log(currentDate);
+        console.log(currentDate.getFullYear());
+        console.log(currentDate.getMonth() + 1);
+        console.log(days[currentDate.getDay()]);
+    </script>
+</body>
+
+</html>
