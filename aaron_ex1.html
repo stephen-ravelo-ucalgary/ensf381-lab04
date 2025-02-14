@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lab4 - Exercise 1</title>
+</head>
+<body>
+    <h1>JavaScript Lab</h1>
+    <script>
+        // Variable Declaration
+        let x = 3;
+        let y = 4;
+        const z = 5;
+        x = 6;
+        //z = 7;
+
+        // String Operations
+        let string1 = "Hello, World!";
+        let string2 = "JavaScript is fun!";
+        console.log(string1.length);
+        console.log(string1 + string2);
+        let string3 = string2.replace("fun", "awesome");
+        console.log(string3);
+
+        // String Templates
+        let name = "Alice";
+        let age = 25;
+        let string4 = `My name is ${name} and I am ${age} years old.`;
+        console.log(string4);
+
+        // Working with Dates
+        let current_date = new Date();
+        console.log(current_date);
+        console.log(current_date.getFullYear());
+        console.log(current_date.getMonth() + 1);
+        console.log(current_date.getDay());
+        let day = current_date.getDay();
+        let days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
+        for (let i = 0; i < days.length; i ++) {
+            if (i + 1 == day) {
+                day = days[i];
+            }
+        }
+        console.log(day);
+    </script>
+</body>
+</html>
